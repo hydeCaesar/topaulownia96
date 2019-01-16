@@ -9,10 +9,21 @@
     "pages/chooseLib/chooseLib"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#000000",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
-  }
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "~sky blue sky~",
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"custom",
+    "backgroundColorTop":"#000000",
+    "backgroundColorBottom":"#000000"
+
+  },
+  "requiredBackgroundModes":[
+    "audio"
+  ]
+ 
+   
+  
+
 }
