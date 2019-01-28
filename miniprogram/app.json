@@ -6,7 +6,10 @@
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/addlist/minigameindex/minigameindex",
+    "pages/addlist/snake/snakegame",
+    "pages/addlist/mine/madmine"
   ],
   "window": {
     "backgroundColor": "#000000",
@@ -14,16 +17,11 @@
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "~sky blue sky~",
     "navigationBarTextStyle": "white",
-    "navigationStyle":"custom",
-    "backgroundColorTop":"#000000",
-    "backgroundColorBottom":"#000000"
-
+    "navigationStyle": "default",
+    "backgroundColorTop": "#000000",
+    "backgroundColorBottom": "#000000"
   },
-  "requiredBackgroundModes":[
+  "requiredBackgroundModes": [
     "audio"
   ]
- 
-   
-  
-
 }

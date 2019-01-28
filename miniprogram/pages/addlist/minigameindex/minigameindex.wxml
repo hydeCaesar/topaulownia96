@@ -1,2 +1,13 @@
-<!--pages/addlist/minigameindex/minigameindex.wxml-->
-<text>pages/addlist/minigameindex/minigameindex.wxml</text>
+<!--miniprogram/pages/addlist/minigameindex/minigameindex.wxml-->
+
+ <view class = "snake">
+    <navigator url = "../snake/snakegame" open-type="navigate">
+    <button class = "snake-button" bindtap = "">Indian Snake~</button>
+    </navigator>
+  </view>
+
+   <view class = "mine">
+    <navigator url = "../mine/madmine" open-type="navigate">
+    <button class = "mine-button" bindtap = "">Mad Mine~</button>
+    </navigator>
+  </view>

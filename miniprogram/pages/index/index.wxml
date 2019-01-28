@@ -2,7 +2,7 @@
 <view class="container">
 
   <!-- 用户 openid -->
-  <view class="userinfo">
+  <!-- <view class="userinfo">
     <button 
       open-type="getUserInfo" 
       bindgetuserinfo="onGetUserInfo"
@@ -12,7 +12,7 @@
     <view>
       <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
     </view>
-  </view>
+  </view> -->
 
 
   <!-- 上传图片 -->
@@ -33,11 +33,7 @@
   </view>
 
 
-  <view class = "acknowledgement">
-    <navigator url = "../thanksto/thanksto" open-type="navigate">
-    <button class = "begin-game-button" bindtap = "">Acknowledgement</button>
-    </navigator>
-  </view>
+  
 
 <view class = "trickortrick">
     <navigator url = "../addlist/minigameindex/minigameindex" open-type="navigate">
@@ -45,6 +41,12 @@
     </navigator>
   </view>
 
+
+<view class = "acknowledgement">
+    <navigator url = "../thanksto/thanksto" open-type="navigate">
+    <button class = "begin-game-button" bindtap =        "">Acknowledgement</button>
+    </navigator>
+  </view>
 
   <!-- 操作数据库 
   <view class="uploader">
