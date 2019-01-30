@@ -9,7 +9,8 @@
     "pages/chooseLib/chooseLib",
     "pages/addlist/minigameindex/minigameindex",
     "pages/addlist/snake/snakegame",
-    "pages/addlist/mine/madmine"
+    "pages/addlist/mine/madmine",
+    "pages/game/canvastry/canvastry"
   ],
   "window": {
     "backgroundColor": "#000000",
@@ -17,7 +18,7 @@
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "~sky blue sky~",
     "navigationBarTextStyle": "white",
-    "navigationStyle": "default",
+    "navigationStyle": "custom",
     "backgroundColorTop": "#000000",
     "backgroundColorBottom": "#000000"
   },

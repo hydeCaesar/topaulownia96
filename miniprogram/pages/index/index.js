@@ -117,4 +117,71 @@ Page({
     })
   },
 
+  onReady: function () {
+    this.total = 10
+    this.position = {
+      x: 150,
+      y: 150,
+      vx: 1,
+      vy: 1
+    }
+
+    this.drawBall()
+    this.interval = setInterval(this.drawBall, 100)
+  },
+
+  //画图，每次画的都是new的东西，所以不能用随机数
+  drawBall: function () {
+    var p = this.position
+    p.x += p.vx
+    p.y += p.vy
+    if (p.x >= 300) {
+      p.vx = -2
+    }
+    if (p.x <= 7) {
+      p.vx = 2
+    }
+    if (p.y >= 300) {
+      p.vy = -2
+    }
+    if (p.y <= 7) {
+      p.vy = 2
+    }
+
+    var context = wx.createCanvasContext("firstcanvas")
+
+    function ball(x, y) {
+      //开始
+      context.beginPath(0)
+      //画圆
+      context.arc(x, y, 5, 0, Math.PI * 2)
+      context.setFillStyle('#1aad19')
+      context.setStrokeStyle('rgba(1,1,1,0)')
+      context.fill()
+      context.stroke()
+    }
+
+    for (var i = 0; i < this.total; i++) {
+      ball(Math.random() * 320, Math.random() * 568)
+    }
+    // ball(p.x, 150)
+    // ball(150, p.y)
+    // ball(300 - p.x, 150)
+    // ball(150, 300 - p.y)
+    // ball(p.x, p.y)
+    // ball(300 - p.x, 300 - p.y)
+    // ball(p.x, 300 - p.y)
+    // ball(300 - p.x, p.y)
+
+    wx.drawCanvas({
+      canvasId: 'firstcanvas',
+      actions: context.getActions()
+    })
+  },
+  onUnload: function () {
+    clearInterval(this.interval)
+  }
+
+
+
 })

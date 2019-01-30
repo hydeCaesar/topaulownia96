@@ -1,6 +1,11 @@
 <!--pages/game/gameIndex/gameIndex.wxml-->
-<text>pages/game/gameIndex/gameIndex.wxml</text>
+
 
 <view class="container">
 <p>fdsgafag</p>
 </view>
+ <view class = "beginGame">
+    <navigator url = "../game/" open-type="navigate">
+    <button class = "begin-game-button" bindtap = "">Start the Story</button>
+    </navigator>
+  </view>
