@@ -18,7 +18,7 @@
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "~sky blue sky~",
     "navigationBarTextStyle": "white",
-    "navigationStyle": "default",
+    "navigationStyle": "custom",
     "backgroundColorTop": "#000000",
     "backgroundColorBottom": "#000000"
   },

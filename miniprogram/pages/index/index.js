@@ -123,7 +123,7 @@ Page({
     }
 
     this.drawBall()
-    this.interval = setInterval(this.drawBall, 1000)
+    this.interval = setInterval(this.drawBall, 100)
   },
 
   //画图，每次画的都是new的东西，所以不能用随机数
