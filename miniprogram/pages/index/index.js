@@ -17,7 +17,6 @@ Page({
       })
       return
     }
-
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -35,7 +34,6 @@ Page({
       }
     })
   },
-
   onGetUserInfo: function(e) {
     if (!this.logged && e.detail.userInfo) {
       this.setData({
@@ -45,7 +43,6 @@ Page({
       })
     }
   },
-
   onGetOpenid: function() {
     // 调用云函数
     wx.cloud.callFunction({
@@ -66,7 +63,6 @@ Page({
       }
     })
   },
-
   // 上传图片
   doUpload: function () {
     // 选择图片
@@ -127,25 +123,25 @@ Page({
     }
 
     this.drawBall()
-    this.interval = setInterval(this.drawBall, 100)
+    this.interval = setInterval(this.drawBall, 1000)
   },
 
   //画图，每次画的都是new的东西，所以不能用随机数
   drawBall: function () {
     var p = this.position
-    p.x += p.vx
-    p.y += p.vy
+    p.x +=p.vx*Math.random()
+    p.y += p.vy*Math.random()
     if (p.x >= 300) {
-      p.vx = -2
+      p.vx = -Math.random()
     }
     if (p.x <= 7) {
-      p.vx = 2
+      p.vx = Math.random()
     }
     if (p.y >= 300) {
-      p.vy = -2
+      p.vy = -Math.random()
     }
     if (p.y <= 7) {
-      p.vy = 2
+      p.vy = Math.random()
     }
 
     var context = wx.createCanvasContext("firstcanvas")
@@ -161,17 +157,17 @@ Page({
       context.stroke()
     }
 
-    for (var i = 0; i < this.total; i++) {
-      ball(Math.random() * 320, Math.random() * 568)
-    }
-    // ball(p.x, 150)
-    // ball(150, p.y)
-    // ball(300 - p.x, 150)
-    // ball(150, 300 - p.y)
-    // ball(p.x, p.y)
-    // ball(300 - p.x, 300 - p.y)
-    // ball(p.x, 300 - p.y)
-    // ball(300 - p.x, p.y)
+    // for (var i = 0; i < this.total; i++) {
+    //   ball(Math.random() * 320, Math.random() * 568)
+    // }
+    ball(p.x, 150)
+    ball(150, p.y)
+    ball(300 - p.x, 150)
+    ball(150, 300 - p.y)
+    ball(p.x, p.y)
+    ball(300 - p.x, 300 - p.y)
+    ball(p.x, 300 - p.y)
+    ball(300 - p.x, p.y)
 
     wx.drawCanvas({
       canvasId: 'firstcanvas',

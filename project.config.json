@@ -10,7 +10,7 @@
 	},
 	"appid": "wxf8f50999a55e59b5",
 	"projectname": "wechatGame",
-	"libVersion": "2.2.5",
+	"libVersion": "2.5.2",
 	"compileType": "miniprogram",
 	"condition": {
 		"search": {

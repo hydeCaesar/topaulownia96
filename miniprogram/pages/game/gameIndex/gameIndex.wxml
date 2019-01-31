@@ -5,7 +5,7 @@
 <p>fdsgafag</p>
 </view>
  <view class = "beginGame">
-    <navigator url = "../game/" open-type="navigate">
+    <navigator url = "../canvastry/canvastry" open-type="navigate">
     <button class = "begin-game-button" bindtap = "">Start the Story</button>
     </navigator>
   </view>

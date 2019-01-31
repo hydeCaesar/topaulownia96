@@ -141,4 +141,29 @@ page {
   height: 568px;
   background-color: #fff;
 }
+.navigator-hover{
+  background: none;
+}
 
+.begin-game-button{
+  background: none;
+  width:200px;
+
+}
+.begin-game-button::after {
+   border: none;
+}   
+.cover-view{
+  position: absolute;
+  left:20%;
+}
+.covertop{
+  bottom: 200px;
+}
+.covertwo{
+  bottom: 150px;
+}
+
+.coverthree{
+    bottom: 100px;
+}
