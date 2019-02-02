@@ -123,21 +123,21 @@ Page({
     }
 
     this.drawBall()
-    this.interval = setInterval(this.drawBall, 100)
+    this.interval = setInterval(this.drawBall, 27)
   },
 
   //画图，每次画的都是new的东西，所以不能用随机数
   drawBall: function () {
     var p = this.position
-    p.x +=p.vx*Math.random()
-    p.y += p.vy*Math.random()
-    if (p.x >= 300) {
+    p.x +=p.vx*Math.random()*7
+    p.y += p.vy*Math.random()*7
+    if (p.x >=320 ) {
       p.vx = -Math.random()
     }
     if (p.x <= 7) {
       p.vx = Math.random()
     }
-    if (p.y >= 300) {
+    if (p.y >= 568) {
       p.vy = -Math.random()
     }
     if (p.y <= 7) {
@@ -160,10 +160,10 @@ Page({
     // for (var i = 0; i < this.total; i++) {
     //   ball(Math.random() * 320, Math.random() * 568)
     // }
-    ball(p.x, 150)
-    ball(150, p.y)
-    ball(300 - p.x, 150)
-    ball(150, 300 - p.y)
+    ball(p.x, 120)
+    ball(200, p.y)
+    ball(356 - p.x, 440)
+    ball(200, 568- p.y)
     ball(p.x, p.y)
     ball(300 - p.x, 300 - p.y)
     ball(p.x, 300 - p.y)

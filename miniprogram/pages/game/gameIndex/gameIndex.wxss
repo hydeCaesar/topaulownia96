@@ -1,1 +1,8 @@
-/* pages/game/gameIndex/gameIndex.wxss */
+.begin-game-button{
+  background: none;
+  width:200px;
+
+}
+.begin-game-button::after {
+   border: none;
+}   

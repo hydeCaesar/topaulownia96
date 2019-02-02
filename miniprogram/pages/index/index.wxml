@@ -3,17 +3,17 @@
     <canvas canvas-id="firstcanvas" class="canvas">
       <cover-view class="cover-view  covertop">
         <navigator url="../game/gameIndex/gameIndex" open-type="navigate">
-          <button class="begin-game-button" bindtap="">Start the Story</button>
+          <button class="begin-game-button" bindtap="">开始探索</button>
         </navigator>
       </cover-view>
       <cover-view class="cover-view covertwo" bindtap="tap1">
-        <navigator url="../addlist/minigameindex/minigameindex" open-type="navigate">
-          <button class="begin-game-button" bindtap="">Trick or Trick</button>
+        <navigator url="../thanksto/thanksto" open-type="navigate">
+          <button class="begin-game-button" bindtap="">鸣谢</button>
         </navigator>
       </cover-view>
       <cover-view class="cover-view coverthree">
-        <navigator url="../thanksto/thanksto" open-type="navigate">
-          <button class="begin-game-button" bindtap="">Acknowledgement</button>
+        <navigator url="../addlist/minigameindex/minigameindex" open-type="navigate">
+          <button class="begin-game-button" bindtap="">Trick or Trick</button>
         </navigator>
       </cover-view>
     </canvas>

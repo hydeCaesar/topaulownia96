@@ -10,7 +10,8 @@
     "pages/addlist/minigameindex/minigameindex",
     "pages/addlist/snake/snakegame",
     "pages/addlist/mine/madmine",
-    "pages/game/canvastry/canvastry"
+    "pages/game/canvastry/canvastry",
+    "pages/game/luxun/diary"
   ],
   "window": {
     "backgroundColor": "#000000",

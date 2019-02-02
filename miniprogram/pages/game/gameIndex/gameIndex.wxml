@@ -2,10 +2,21 @@
 
 
 <view class="container">
-<p>fdsgafag</p>
-</view>
+
+
  <view class = "beginGame">
     <navigator url = "../canvastry/canvastry" open-type="navigate">
-    <button class = "begin-game-button" bindtap = "">Start the Story</button>
+    <button class = "begin-game-button" bindtap = "">1919 鲁镇</button>
     </navigator>
   </view>
+   <view class = "beginGame">
+    <navigator url = "../canvastry/canvastry" open-type="navigate">
+    <button class = "begin-game-button" bindtap = "">1912 Providence</button>
+    </navigator>
+  </view>
+   <view class = "beginGame">
+    <navigator url = "../canvastry/canvastry" open-type="navigate">
+    <button class = "begin-game-button" bindtap = "">会议记录</button>
+    </navigator>
+  </view>
+</view>
