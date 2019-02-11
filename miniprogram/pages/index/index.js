@@ -116,8 +116,8 @@ Page({
   onReady: function () {
     this.total = 10
     this.position = {
-      x: 150,
-      y: 150,
+      x: 0,
+      y: 0,
       vx: 1,
       vy: 1
     }
@@ -151,8 +151,8 @@ Page({
       context.beginPath(0)
       //画圆
       context.arc(x, y, 5, 0, Math.PI * 2)
-      context.setFillStyle('#1aad19')
-      context.setStrokeStyle('rgba(1,1,1,0)')
+      context.setFillStyle('#00FFFF')
+      context.setStrokeStyle('#00FFFF')
       context.fill()
       context.stroke()
     }
