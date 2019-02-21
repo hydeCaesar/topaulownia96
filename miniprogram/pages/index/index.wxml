@@ -3,12 +3,12 @@
     <canvas canvas-id="firstcanvas" class="canvas">
       <cover-view class="cover-view  covertop">
         <navigator url="../game/gameIndex/gameIndex" open-type="navigate">
-          <button class="begin-game-button" bindtap="">开始探索</button>
+          <button class="begin-game-button" bindtap="">这是鸽按钮</button>
         </navigator>
       </cover-view>
       <cover-view class="cover-view covertwo" bindtap="tap1">
         <navigator url="../thanksto/thanksto" open-type="navigate">
-          <button class="begin-game-button" bindtap="">鸣谢</button>
+          <button class="begin-game-button" bindtap="">特别鸣谢</button>
         </navigator>
       </cover-view>
       <cover-view class="cover-view coverthree">

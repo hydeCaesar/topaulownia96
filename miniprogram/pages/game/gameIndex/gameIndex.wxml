@@ -4,17 +4,17 @@
 <view class="container">
 
 
- <view class = "beginGame">
-    <navigator url = "../canvastry/canvastry" open-type="navigate">
-    <button class = "begin-game-button" bindtap = "">1919 鲁镇</button>
+ <view class = "beginGame  covertop">
+    <navigator url = "../luxun/diary" open-type="navigate">
+    <button class = "begin-game-button" bindtap = "" >1919 \n鲁镇</button>
     </navigator>
   </view>
-   <view class = "beginGame">
+   <view class = "beginGame  covertwo">
     <navigator url = "../canvastry/canvastry" open-type="navigate">
-    <button class = "begin-game-button" bindtap = "">1912 Providence</button>
+    <button class = "begin-game-button" bindtap = "">1912 \n Providence</button>
     </navigator>
   </view>
-   <view class = "beginGame">
+   <view class = "beginGame  coverthree">
     <navigator url = "../canvastry/canvastry" open-type="navigate">
     <button class = "begin-game-button" bindtap = "">会议记录</button>
     </navigator>

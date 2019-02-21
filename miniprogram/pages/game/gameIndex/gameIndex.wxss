@@ -6,3 +6,17 @@
 .begin-game-button::after {
    border: none;
 }   
+
+.covertop{
+  bottom: 200px;
+  position: absolute;
+}
+.covertwo{
+  bottom: 150px;
+  position:absolute;
+}
+
+.coverthree{
+    bottom: 100px;
+    position: absolute;
+}
