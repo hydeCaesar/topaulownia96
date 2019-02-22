@@ -1,2 +1,4 @@
 <!--miniprogram/pages/game/luxun/diary.wxml-->
-<text>miniprogram/pages/game/luxun/diary.wxml</text>
+
+<view class="container backpage">
+</view>

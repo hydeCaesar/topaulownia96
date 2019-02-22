@@ -1,1 +1,9 @@
 /* miniprogram/pages/game/luxun/diary.wxss */
+
+.backpage{
+  height: 556px;
+ background:url(https://6879-hyde-to-paulownia-84cce8-1258456731.tcb.qcloud.la/luxun.jpg?sign=9d4c10a5d8b091bb329a90b455dee836&t=1550827761) ;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}

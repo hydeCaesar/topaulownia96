@@ -1,7 +1,7 @@
 <!--pages/game/gameIndex/gameIndex.wxml-->
 
 
-<view class="container">
+<view class="container backpage">
 
 
  <view class = "beginGame  covertop">
