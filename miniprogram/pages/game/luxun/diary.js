@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    warningInfo:  "以下内容可能包含轻微暴力血腥精神污染等",
+    nextPage: false
   },
 
   /**
@@ -62,5 +63,19 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  changeButtonYes: function ()  {
+    this.setData({
+      warningInfo : "在凝视深渊的时候，请闭上眼",
+      nextPage : true,
+    })
+  },
+
+  changeButtonCancel: function  ()  {
+    this.setData({
+      warningInfo: "当背后指向前方，已无路可逃",
+      nextPage: true,
+    })
   }
 })

@@ -1,23 +1,49 @@
-// pages/thanksto/thanksto.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
-  },
-
-  /**
-   * 组件的初始数据
-   */
+Page({
   data: {
-
+    animationData: {}
   },
+  onShow: function () {
+    var animation = wx.createAnimation({
+      duration: 1000,
+      timingFunction: "ease",
+    })
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
+    this.animation = animation
 
+    animation.scale(2, 2).rotate(45).step();
+
+    this.setData({
+      animationData: animation.export()
+    })
+
+    setTimeout(function () {
+      animation.translate(30).step();
+      this.setData({
+        animationData: animation.export()
+      })
+    }.bind(this), 100)
+  },
+  rotateAndScale: function () {
+    // 旋转同时放大
+    this.animation.rotate(45).scale(2, 2).step()
+    this.setData({
+      animationData: animation.export()
+    })
+  },
+  rotateThenScale: function () {
+    // 先旋转后放大
+    this.animation.rotate(45).step()
+    this.animation.scale(2, 2).step()
+    this.setData({
+      animationData: animation.export()
+    })
+  },
+  rotateAndScaleThenTranslate: function () {
+    // 先旋转同时放大，然后平移
+    this.animation.rotate(45).scale(2, 2).step()
+    this.animation.translate(100, 100).step({ duration: 1000 })
+    this.setData({
+      animationData: animation.export()
+    })
   }
 })

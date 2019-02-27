@@ -7,3 +7,14 @@
   -o-background-size: cover;
   background-position: center 0;
 }
+
+.begin-game-button{
+  
+  background: none;
+  text-align: center;
+  width:200px;
+
+}
+.begin-game-button::after {
+   border: none;
+}   

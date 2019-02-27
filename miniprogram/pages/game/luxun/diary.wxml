@@ -1,4 +1,16 @@
 <!--miniprogram/pages/game/luxun/diary.wxml-->
 
 <view class="container backpage">
+  <view class = "page-body-wrapper" >
+  <text class ="warningDev">{{warningInfo}}</text>
+  </view>
+  <view class = "begin-button" wx:if="{{!nextPage}}">
+  <button class="begin-game-button" bindtap='changeButtonYes'>继续故事</button>
+  <button class = "begin-game-button"bindtap='changeButtonCancel'>溜了溜了</button>
+  </view>
+  <view class = "begin-button" wx:if="{{nextPage}}">
+   <navigator url = "../mine/madmine" open-type="navigate">
+    <button class = "begin-game-button " bindtap = "">“救救孩子”</button>
+    </navigator>
+  </view>
 </view>

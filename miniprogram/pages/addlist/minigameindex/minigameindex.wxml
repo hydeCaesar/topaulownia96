@@ -1,13 +1,16 @@
 <!--miniprogram/pages/addlist/minigameindex/minigameindex.wxml-->
+<view class = "container">  
 
- <view class = "snake">
+ <view class = "covertop">
     <navigator url = "../snake/snakegame" open-type="navigate">
-    <button class = "snake-button" bindtap = "">Indian Snake~</button>
+    <button class = "begin-game-button " bindtap = "">会卡死的贪食蛇</button>
     </navigator>
   </view>
 
-   <view class = "mine">
+   <view class = "covertwo">
     <navigator url = "../mine/madmine" open-type="navigate">
-    <button class = "mine-button" bindtap = "">Mad Mine~</button>
+    <button class = "begin-game-button " bindtap = "">蜜汁扫雷</button>
     </navigator>
   </view>
+
+</view>
