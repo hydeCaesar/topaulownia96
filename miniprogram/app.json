@@ -12,7 +12,8 @@
     "pages/addlist/mine/madmine",
     "pages/game/canvastry/canvastry",
     "pages/game/luxun/diary",
-    "pages/thanksto/thanksto"
+    "pages/thanksto/thanksto",
+    "pages/game/luxun/p1/p1"
   ],
   "window": {
     "backgroundColor": "#000000",

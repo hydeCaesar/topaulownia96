@@ -1,12 +1,11 @@
-// miniprogram/pages/game/luxun/diary.js
+// miniprogram/pages/game/luxun/p1/p1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    warningInfo:  "以下内容会包含轻微暴力及san值下降",
-    nextPage: false
+
   },
 
   /**
@@ -63,19 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  changeButtonYes: function ()  {
-    this.setData({
-      warningInfo : "在凝视深渊的时候，请闭上眼",
-      nextPage : true,
-    })
-  },
-
-  changeButtonCancel: function  ()  {
-    this.setData({
-      warningInfo: "当背后指向前方，或许无路可逃",
-      nextPage: true,
-    })
   }
 })
