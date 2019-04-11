@@ -13,7 +13,8 @@
     "pages/game/canvastry/canvastry",
     "pages/game/luxun/diary",
     "pages/thanksto/thanksto",
-    "pages/game/luxun/p1/p1"
+    "pages/game/luxun/p1/p1",
+    "pages/addlist/queen/eightqueen"
   ],
   "window": {
     "backgroundColor": "#000000",

@@ -15,12 +15,12 @@
     </view>
     <view class="dialog warn" wx:if="{{dialog_warn}}">
       <icon type="warn" size="60" color="orange"></icon>
-      <text>Game Over</text>
+      <text>菜</text>
       <button bindtap="reset">重新开始</button>
     </view>
     <view class="dialog success" wx:if="{{dialog_suc}}">
       <icon type="success" size="60" color="green"></icon>
-      <text>Success~</text>
+      <text></text>
       <button bindtap="reset">重新开始</button>
     </view>
   </view>

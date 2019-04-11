@@ -13,4 +13,10 @@
     </navigator>
   </view>
 
+     <view class = "coverthree">
+    <navigator url = "../queen/eightqueen" open-type="navigate">
+    <button class = "begin-game-button " bindtap = "">你也是Queen?</button>
+    </navigator>
+  </view>
+
 </view>
