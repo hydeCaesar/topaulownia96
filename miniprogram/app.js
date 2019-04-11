@@ -1,8 +1,8 @@
 //app.js
 App({
-  row: 12,//扫雷游戏的行数
-  column: 8,//扫雷游戏的列数
-  bomb: 8,//包含雷的总数
+  row: 17,//扫雷游戏的行数
+  column: 13,//扫雷游戏的列数
+  bomb: 36,//包含雷的总数
 
   onLaunch: function () {
     
